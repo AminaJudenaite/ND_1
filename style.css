@@ -1,1 +1,76 @@
+/* Bendras apipavidalinimas */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background-color: #fafafa;
+    color: #333;
+}
 
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f39c12; /* Keičiasi spalva užvedus */
+}
+
+/* Lentelės stilius - 1px juodi rėmeliai */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #ecf0f1;
+}
+
+/* Kas antra eilutė pilka */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Ingredientų sąrašas su žvaigždutėmis */
+.ingredients li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.ingredients li::before {
+    content: "★ ";
+    color: #f39c12;
+}
+
+/* Formos stilius */
+.contact-form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
